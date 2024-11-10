@@ -1,0 +1,15 @@
+@function px-($w){
+    @return 0 $w;
+}
+
+@function py-($w){
+    @return $w 0;
+}
+
+@function mx-($w){
+    @return 0 $w;
+}
+
+@function my-($w){
+    @return $w 0
+}

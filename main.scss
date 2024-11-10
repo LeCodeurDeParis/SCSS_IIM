@@ -1,0 +1,121 @@
+@import 'variables.scss';
+@import 'font-style.scss';
+@import 'functions.scss';
+
+main {
+    padding: px-(10rem);
+    margin: my-(4rem);
+}
+
+.bandeau-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
+.pets{
+    font-size: 1.5rem;
+    font-family: $GilroyBold;
+    color: $primary_Blue;
+    margin: 0;
+}
+
+.secondary_button img{
+    width: 20%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: my-(6rem);
+    justify-content: space-evenly;
+}
+
+.pet_container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    border-radius: 7px;
+    margin: 0.5rem;
+    width: 20%;
+}
+
+.icon {
+    width: 7.5% !important;
+}
+
+.pet_container img {
+    border-radius: 6px;
+}
+
+.pet_name, .price{
+    font-family: $GilroyBold;
+}
+
+.sub_info{
+    font-size: smaller;
+    opacity: 50%;
+}
+
+.mid-bandeau{
+    display: flex;
+    justify-content: space-around;
+    background-color: $backgroundColor;
+    border-radius: 12px;
+}
+
+.mid-bandeau > img{
+    display: flex;
+    align-self: flex-end;
+    width: 40%;
+}
+
+.mid-bandeau p {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.mid-bandeau .pres_button {
+    align-self: flex-end;
+}
+
+.pet_blog {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    border-radius: 7px;
+    margin: 0.5rem;
+    width: 25%;
+}
+
+.pet_blog img {
+    border-radius: 6px;
+}
+
+.pet_knowledge{
+    font-size: x-small;
+    background-color: #00A7E7;
+    color: white;
+    width: auto;
+    border-radius: 16px;
+    padding: 0.1rem;
+    width: fit-content;
+}
+
+.title_article{
+    font-family: $GilroyBold;
+    margin: 0;
+}
+
+.article{
+    font-size: small;
+    color: $neutral_80;
+}
