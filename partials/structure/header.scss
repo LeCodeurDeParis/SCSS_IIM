@@ -1,0 +1,171 @@
+@import '../variables.scss';
+@import '../font-style.scss';
+@import '../functions.scss';
+
+
+@mixin primary {
+    background-color: $primary_Blue;
+    padding: px-(1rem);
+    border: none;
+    border-radius: 35px;
+    color: white;
+    height: 2.5rem;
+    width: 9rem;
+    font-weight: 500;
+}
+
+@mixin secondary {
+    background-color: transparent;
+    padding: px-(1rem);
+    color: $primary_Blue;
+    height: 2.5rem;
+    width: 9rem;
+    border: 1px solid $primary_Blue;
+    border-radius: 35px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0.5rem;
+}
+
+* {
+    list-style: none;
+    font-family: $GilroyMedium;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    background-color: $backgroundColor;
+    flex-direction: column;
+
+    &__bandeau {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        color: $primary_Blue;
+        margin: 0 auto;
+        padding: py-(1rem);
+        background-color: $backgroundColor;
+    }
+
+    &__logo {
+        width: 7%;
+    }
+
+    &__logo img {
+        width: 100%;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__menu-list {
+        display: flex;
+    }
+
+    &__menu-item {
+        padding: px-(2rem);
+    }
+
+    &__input-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__input {
+        height: 2.5rem;
+        width: 9rem;
+        border-radius: 35px;
+        padding: px-(2.5rem);
+        border: none;
+    }
+
+    &__input-icon {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        width: 8%;
+    }
+
+    &__pres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30%;
+        gap: 1.5rem;
+        padding-left: 10rem;
+        padding: py-(5rem);
+        color: $primary_Blue;
+    }
+
+    &__title {
+        font-weight: 800;
+        color: $primary_Blue;
+        font-size: 4rem;
+        font-family: $GilroyBold;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    &__sub-title {
+        font-weight: 700;
+        color: $primary_Blue;
+        font-size: 3rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    &__text {
+        font-size: small;
+        color: $neutral_80;
+    }
+
+    &__img-pres {
+        width: 60%;
+        height: auto;
+    }
+
+    &__img-pres img {
+        width: 100%;
+    }
+
+    &__pres-buttons {
+        display: flex;
+        width: 80%;
+    
+        .button__icon {
+            border: solid 2px $primary_Blue;
+            border-radius: 50px;
+            width: 20%;
+        }
+    }
+}
+
+.button--primary {
+    @include primary();
+}
+
+.button--secondary {
+    @include secondary();
+}
+
+.button__icon {
+    width: 10%;
+}

@@ -1,0 +1,186 @@
+@import '../variables.scss';
+@import '../font-style.scss';
+@import '../functions.scss';
+
+.main {
+    padding: px-(10rem);
+    width: 80%;
+    margin: 0 auto;
+
+    &__bandeau {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__news-title {
+        font-size: 1.5rem;
+        font-family: $GilroyBold;
+        color: $primary_Blue;
+        margin: 0;
+    }
+
+    &__news-pets {
+        font-size: 1.5rem;
+        font-family: $GilroyBold;
+        color: $primary_Blue;
+        margin: 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: my-(6rem);
+        justify-content: space-evenly;
+    }
+}
+
+.pet-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    border-radius: 7px;
+    margin: 0.5rem;
+    width: 20%;
+
+    &__image {
+        border-radius: 6px;
+    }
+
+    &__name, &__price {
+        font-family: $GilroyBold;
+    }
+
+    &__sub-info {
+        font-size: smaller;
+        opacity: 50%;
+    }
+}
+
+.mid-bandeau {
+    display: flex;
+    justify-content: space-between;
+    background-color: $backgroundColor;
+    border-radius: 12px;
+
+    &__image {
+        width: 40%;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: end;
+        width: 50%;
+        margin-right: 3rem;
+    }
+
+    &__title {
+        font-weight: 800;
+        color: $primary_Blue;
+        font-size: 4rem;
+        font-family: $GilroyBold;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    &__sub-title {
+        font-weight: 700;
+        color: $primary_Blue;
+        font-size: 3rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    &__text {
+        font-size: small;
+        color: $neutral_80;
+        max-width: 30rem;
+    }
+
+    &__buttons {
+        display: flex;
+        width: 50%;
+    }
+}
+
+.pet-blog {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    border-radius: 7px;
+    margin: 0.5rem;
+    width: 25%;
+
+    &__image {
+        border-radius: 6px;
+    }
+
+    &__knowledge {
+        font-size: x-small;
+        background-color: #00A7E7;
+        color: white;
+        border-radius: 16px;
+        padding: 0.1rem;
+        width: fit-content;
+    }
+
+    &__title {
+        font-family: $GilroyBold;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: small;
+        color: $neutral_80;
+    }
+}
+
+.button--primary {
+    background-color: $primary_Blue;
+    padding: px-(1rem);
+    border: none;
+    border-radius: 35px;
+    color: white;
+    height: 2.5rem;
+    width: 9rem;
+    font-weight: 500;
+}
+
+.button--secondary {
+    background-color: transparent;
+    padding: px-(1rem);
+    color: $primary_Blue;
+    height: 2.5rem;
+    width: 9rem;
+    border: 1px solid $primary_Blue;
+    border-radius: 35px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0.5rem;
+}
+
+.button__icon {
+    border: solid 2px $primary_Blue;
+    border-radius: 50px;
+    width: 20%;
+    margin-left: 0.5rem;
+}
+
+.button__icon__chevron {
+    width: 10%;
+    margin-left: 0;
+}
