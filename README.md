@@ -1,4 +1,4 @@
-# SCSS_IIM
+# SCSS_IIM Paul Boisaubert-Baillion
 
 Pour lancer le projet, ouvrez Visual Studio Code et ouvrez un terminal. 
 Dans le terminal lancez la commande "sass --watch style.scss style.css". 
