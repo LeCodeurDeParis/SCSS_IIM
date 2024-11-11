@@ -55,12 +55,15 @@ header {
     color: $primary_Blue;
     margin: 0 auto;
     padding: py-(1rem);
+    background-color: $backgroundColor;
 }
 
 .logo{
-    display: flex;
-    flex-direction: column;
-    width: 7.5%;
+    width: 7%;
+}
+
+.logo img{
+    width: 100%;
 }
 
 .primary_button{
@@ -71,11 +74,10 @@ header {
     @include secondary()
 }
 
-header ul {
+ul {
     display: flex;
     li{
         padding: px-(2rem);
-
     }
 }
 
